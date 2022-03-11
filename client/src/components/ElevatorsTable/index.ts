@@ -1,0 +1,1 @@
+export { ElevatorsTable } from "./ElevatorsTable";

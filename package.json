@@ -1,0 +1,28 @@
+{
+  "name": "backend-js-express",
+  "version": "1.0.0",
+  "description": "Elevators code challenge - backend",
+  "private": true,
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "nodemon --watch src -e js,ejs --exec npm run start",
+    "install:client": "cd client && npm i",
+    "start": "node .",
+    "start:client": "cd client && npm start",
+    "test": "mocha --recursive './server/**/*.spec.js'",
+    "test:watch": "mocha --recursive './server/**/*.spec.js' --watch"
+  },
+  "author": "Fortum",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-sse": "^0.5.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.3"
+  }
+}
